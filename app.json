@@ -10,16 +10,30 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.mamasales.app",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-image-picker",
+      "expo-sqlite",
+      "expo-sharing"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "96f7a22b-94f1-4b43-9ffc-458d42d4a6d7"
+      }
     }
   }
 }
